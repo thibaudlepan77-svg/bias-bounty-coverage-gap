@@ -1,0 +1,6 @@
+data/
+*.duckdb
+soumission*.csv
+sonde_*.csv
+decale_*.csv
+__pycache__/
