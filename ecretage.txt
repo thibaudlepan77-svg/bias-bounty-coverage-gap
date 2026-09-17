@@ -1,0 +1,44 @@
+
+### northern-ca
+  part OSM              n   ecart note   desaccord reel   part jetee   tracts ecretes
+  sous 0,05            56     0.0226       0.0240       0.06        0.143
+  0,05 a 0,50         224     0.0078       0.0320       0.76        0.554
+  0,50 a 0,90         178     0.0059       0.0543       0.89        0.601
+  au-dessus de 0,90   131     0.0049       0.0600       0.92        0.550
+
+  qui vit dans les tracts que l ecretage protege, rapport au-dessus de 1
+    note zero par ecretage     311 tracts    1265588 hab  tribal 0.032  SVI 0.571  desaccord 0.0686
+    note sur son deficit       278 tracts    1188990 hab  tribal 0.018  SVI 0.546  desaccord 0.0170
+
+### eastern-ok
+  part OSM              n   ecart note   desaccord reel   part jetee   tracts ecretes
+  sous 0,05           372     0.0104       0.0860       0.88        0.255
+  0,05 a 0,50         656     0.0024       0.0954       0.97        0.712
+  0,50 a 0,90         123     0.0017       0.1430       0.99        0.870
+  au-dessus de 0,90    31     0.0011       0.0815       0.99        0.806
+
+  qui vit dans les tracts que l ecretage protege, rapport au-dessus de 1
+    note zero par ecretage     694 tracts    2310590 hab  tribal 0.546  SVI 0.560  desaccord 0.1570
+    note sur son deficit       488 tracts    1614481 hab  tribal 0.873  SVI 0.609  desaccord 0.0117
+
+### maricopa-az
+  part OSM              n   ecart note   desaccord reel   part jetee   tracts ecretes
+  sous 0,05            34     0.0011       0.3232       1.00        0.647
+  0,05 a 0,50         151     0.0006       0.2062       1.00        0.881
+  0,50 a 0,90         329     0.0016       0.1508       0.99        0.854
+  au-dessus de 0,90  1056     0.0021       0.1206       0.98        0.790
+
+  qui vit dans les tracts que l ecretage protege, rapport au-dessus de 1
+    note zero par ecretage    1270 tracts    5250588 hab  tribal 0.027  SVI 0.537  desaccord 0.1703
+    note sur son deficit       300 tracts    1334142 hab  tribal 0.007  SVI 0.399  desaccord 0.0096
+
+### south-central-tx
+  part OSM              n   ecart note   desaccord reel   part jetee   tracts ecretes
+  sous 0,05           951     0.0113       0.1029       0.89        0.267
+  0,05 a 0,50        1426     0.0090       0.0617       0.85        0.560
+  0,50 a 0,90        1615     0.0041       0.1484       0.97        0.807
+  au-dessus de 0,90  1901     0.0027       0.1635       0.98        0.804
+
+  qui vit dans les tracts que l ecretage protege, rapport au-dessus de 1
+    note zero par ecretage    3885 tracts   16723941 hab  tribal 0.000  SVI 0.573  desaccord 0.1804
+    note sur son deficit      2008 tracts    8815775 hab  tribal 0.000  SVI 0.600  desaccord 0.0176

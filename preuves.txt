@@ -1,0 +1,146 @@
+## 1. Le melange amont varie d une region a l autre, d un facteur cinq
+
+  region             batiments      OSM      Microsoft   Esri   gel Microsoft
+  northern-ca          1164723    0.466      0.508    0.026   2023-09-08
+  eastern-ok           2551694    0.167      0.694    0.140   2024-07-01
+  maricopa-az          2907350    0.797      0.143    0.047   2023-09-01
+  south-central-tx    11463390    0.510      0.443    0.024   2024-02-22
+
+  La couche Microsoft de reference du concours est celle de fevrier
+  2026. Aucun lot Microsoft transporte par Overture n atteint 2025.
+
+
+## 2. L ecart suit la part OpenStreetMap, et il la suit DANS chaque classe
+
+  northern-ca
+    classe   q      n   part OSM   ecart batiment   ecart POI
+    Rural    1     37     0.025        0.0257        0.1499
+    Rural    2     37     0.113        0.0123        0.1742
+    Rural    3     37     0.264        0.0154        0.1687
+    Rural    4     36     0.596        0.0141        0.1647
+    Urbain   1    111     0.137        0.0066        0.0732
+    Urbain   2    111     0.525        0.0037        0.0444
+    Urbain   3    111     0.840        0.0046        0.0503
+    Urbain   4    111     0.961        0.0052        0.0249
+
+  eastern-ok
+    classe   q      n   part OSM   ecart batiment   ecart POI
+    Rural    1    103     0.010        0.0192        0.1396
+    Rural    2    103     0.033        0.0124        0.1789
+    Rural    3    103     0.072        0.0069        0.1767
+    Rural    4    102     0.282        0.0016        0.1645
+    Urbain   1    196     0.032        0.0033        0.0477
+    Urbain   2    195     0.108        0.0026        0.0311
+    Urbain   3    195     0.262        0.0008        0.0449
+    Urbain   4    195     0.669        0.0024        0.0410
+
+  maricopa-az
+    classe   q      n   part OSM   ecart batiment   ecart POI
+    Rural    1     41     0.107        0.0002        0.0839
+    Rural    2     41     0.336        0.0004        0.1275
+    Rural    3     41     0.628        0.0000        0.0814
+    Rural    4     40     0.907        0.0000        0.0816
+    Urbain   1    357     0.604        0.0018        0.0494
+    Urbain   2    357     0.929        0.0021        0.0339
+    Urbain   3    357     0.969        0.0020        0.0279
+    Urbain   4    357     0.988        0.0025        0.0336
+
+  south-central-tx
+    classe   q      n   part OSM   ecart batiment   ecart POI
+    Rural    1    248     0.012        0.0227        0.1245
+    Rural    2    248     0.054        0.0163        0.1339
+    Rural    3    248     0.193        0.0098        0.1067
+    Rural    4    247     0.750        0.0034        0.0792
+    Urbain   1   1252     0.074        0.0058        0.0350
+    Urbain   2   1252     0.607        0.0070        0.0319
+    Urbain   3   1251     0.899        0.0044        0.0330
+    Urbain   4   1251     0.974        0.0019        0.0269
+
+
+## 3. La part OSM des BATIMENTS predit l ecart sur les POINTS D INTERET,
+   qui ne doivent rien a OpenStreetMap
+
+  region             q1 ecart POI   q4 ecart POI   rapport   part meta q1   part meta q4
+  northern-ca            0.1205         0.0342      3.52        0.683          0.589
+  eastern-ok             0.1033         0.0491      2.10        0.730          0.625
+  maricopa-az            0.0673         0.0342      1.97        0.647          0.567
+  south-central-tx       0.0698         0.0286      2.44        0.710          0.600
+
+
+## 4. Les tracts qu une seule source amont porte, et leur ecart
+
+  region             tracts a source unique   habitants   ecart   ecart ailleurs
+  northern-ca                         131      524582   0.0119   0.0069
+  eastern-ok                          362     1174415   0.0108   0.0023
+  maricopa-az                         799     3531241   0.0023   0.0014
+  south-central-tx                   1986     8347182   0.0065   0.0058
+
+
+## 5. La derive de millesime, la ou elle est lisible
+
+  Lisible seulement sous une part OSM faible. Ailleurs Overture
+  REMPLACE l empreinte Microsoft par celle du benevole, et la mesure
+  ne parlerait plus du temps.
+
+  region             tracts   derive   ecart note   habitants
+  northern-ca            56   0.0484   0.0226      201296
+  eastern-ok            372   0.1827   0.0104     1210235
+  maricopa-az            34   0.3462   0.0011      134120
+  south-central-tx      951   0.0583   0.0113     3824139
+
+
+## 6. Les tracts nommes, ecart batiment le plus fort sous une part OSM faible
+
+  northern-ca
+    GEOID        comte   Overture   Microsoft   ecart   habitants
+    06063000502     063       3570        4132   0.1360       1780
+    06103000400     103       4266        4780   0.1075       5598
+    06103000201     103       1812        2000   0.0940       3775
+    06007001601     007       1193        1309   0.0886       1712
+    06033000601     033       1673        1822   0.0818       2342
+    06089011803     089       2136        2325   0.0813       2818
+    06103000202     103       3639        3930   0.0740       4358
+    06033000602     033       2010        2130   0.0563       2078
+
+  eastern-ok
+    GEOID        comte   Overture   Microsoft   ecart   habitants
+    40041375902     041       1106        1417   0.2195       1070
+    40041375805     041       1909        2210   0.1362       2032
+    40091780301     091       3095        3577   0.1347       1258
+    40041375602     041       2127        2440   0.1283       3108
+    40041375901     041       2232        2502   0.1079       2835
+    40041375806     041        922        1022   0.0978       1405
+    40041375601     041       2434        2629   0.0742       3331
+    40095094806     095       2938        3131   0.0616       1794
+
+  maricopa-az
+    GEOID        comte   Overture   Microsoft   ecart   habitants
+    04021001712     021       1778        1795   0.0095       5168
+    04019004631     019        827         832   0.0060       3623
+    04021001705     021       3197        3212   0.0047       7885
+    04021001706     021       2014        2023   0.0044       5494
+    04021000902     021       1022        1025   0.0029       2240
+    04021000603     021       3234        3242   0.0025       6079
+    04019004727     019       1871        1875   0.0021       2886
+    04021002104     021       1936        1940   0.0021       4218
+
+  south-central-tx
+    GEOID        comte   Overture   Microsoft   ecart   habitants
+    48029141800     029       3515        5175   0.3208       4924
+    48187210508     187       2146        2891   0.2577       3081
+    48091310603     091       4220        5257   0.1973       5451
+    48091310609     091       3243        4006   0.1905       4046
+    48091310611     091       2777        3372   0.1765       3381
+    48013960204     013       2988        3605   0.1712       4153
+    48187210513     187       1152        1385   0.1682       1583
+    48091310610     091       2110        2512   0.1600       3254
+
+
+## 7. Qui vit dans ces tracts, vulnerabilite sociale et terres tribales
+
+  region             part OSM sous 0,05          reste
+                     SVI moyen   tribal      SVI moyen   tribal
+  northern-ca           0.568     0.036         0.559     0.024
+  eastern-ok            0.620     0.806         0.562     0.616
+  maricopa-az           0.409     0.057         0.513     0.022
+  south-central-tx      0.640     0.000         0.570     0.000
