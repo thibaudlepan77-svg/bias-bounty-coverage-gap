@@ -99,6 +99,11 @@ disagreement, `abs(1 - overture / microsoft)`, and reports the share of the
 second that the first discards, broken out by how much of the tract is volunteer
 mapped and by which side of the clip the tract falls on.
 
+`fiche_biais.py` recomputes the tribal against non tribal ratio, first on the
+scored gap and then on the plain disagreement, on the same tracts. The two
+answers do not agree on the sign, which is the point of the last section of the
+writeup.
+
 `circularite.py` is the test that killed the result I started with. The scored
 gap is computed on the same Overture count that the volunteer share is computed
 from, so a correlation between them can be mechanical. Restricting to tracts
