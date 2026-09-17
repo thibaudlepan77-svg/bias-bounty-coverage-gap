@@ -15,10 +15,11 @@ Python 3.13 and DuckDB with the `spatial` extension. Nothing else. No model, no
 seed, no randomness anywhere, so two runs give the same numbers.
 
 ```
-pip install duckdb pandas
+pip install duckdb pandas numpy
 ```
 
-`pandas` is used only to group a few result tables for printing.
+`pandas` is used only to group a few result tables for printing, and `numpy`
+only by the permutation test.
 
 ## Getting the data
 
@@ -103,6 +104,11 @@ mapped and by which side of the clip the tract falls on.
 scored gap and then on the plain disagreement, on the same tracts. The two
 answers do not agree on the sign, which is the point of the last section of the
 writeup.
+
+`permutation.py` shuffles the tribal label within each region and recomputes the
+ratio, twenty thousand draws on a fixed seed, plus a region stratified bootstrap
+for the interval. `permutation.txt` is the run the writeup quotes. It needs
+`numpy`.
 
 `circularite.py` is the test that killed the result I started with. The scored
 gap is computed on the same Overture count that the volunteer share is computed

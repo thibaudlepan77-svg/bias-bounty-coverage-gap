@@ -1,0 +1,10 @@
+9234 tracts, dont 857 tribaux, 20000 tirages, graine 20260917
+
+  les quatre regions, 9234 tracts
+    ecart note       rapport  1.19   p 5.00e-05   intervalle [0.99, 1.42]
+    desaccord reel   rapport  0.36   p 5.00e-05   intervalle [0.30, 0.43]
+
+  Oklahoma orientale seule, 1182 tracts
+    ecart note       rapport  4.50   p 5.00e-05   intervalle [3.11, 6.80]
+    desaccord reel   rapport  0.19   p 5.00e-05   intervalle [0.15, 0.23]
+
