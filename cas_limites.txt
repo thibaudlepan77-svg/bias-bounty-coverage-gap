@@ -1,0 +1,56 @@
+
+northern-ca, 591 tracts
+  population nulle                                          0
+    dont au moins une composante definie                    0
+    score moyen de ces tracts                               None
+  surface terrestre nulle (ALAND = 0)                       0
+    dont aucune composante definie                          0
+  ni route ni batiment Overture                             0
+    score moyen de ces tracts                               None
+  composantes definies, 3 / 2 / 1 / 0                       373 / 216 / 2 / 0
+  diviseur fixe 3, ecart moyen absolu au composite          0.003
+  diviseur fixe 3, correlation des rangs                    0.998
+  moyenne par tract / ponderee par la population            0.0656 / 0.0615
+  moyenne urbain / rural                                    0.0477 / 0.1193
+
+eastern-ok, 1192 tracts
+  population nulle                                          1
+    dont au moins une composante definie                    1
+    score moyen de ces tracts                               0.1881
+  surface terrestre nulle (ALAND = 0)                       0
+    dont aucune composante definie                          0
+  ni route ni batiment Overture                             0
+    score moyen de ces tracts                               None
+  composantes definies, 3 / 2 / 1 / 0                       938 / 253 / 1 / 0
+  diviseur fixe 3, ecart moyen absolu au composite          0.0009
+  diviseur fixe 3, correlation des rangs                    0.998
+  moyenne par tract / ponderee par la population            0.1242 / 0.1254
+  moyenne urbain / rural                                    0.0925 / 0.1842
+
+maricopa-az, 1593 tracts
+  population nulle                                          11
+    dont au moins une composante definie                    11
+    score moyen de ces tracts                               0.0087
+  surface terrestre nulle (ALAND = 0)                       0
+    dont aucune composante definie                          0
+  ni route ni batiment Overture                             0
+    score moyen de ces tracts                               None
+  composantes definies, 3 / 2 / 1 / 0                       719 / 863 / 11 / 0
+  diviseur fixe 3, ecart moyen absolu au composite          0.0037
+  diviseur fixe 3, correlation des rangs                    1.0
+  moyenne par tract / ponderee par la population            0.0435 / 0.0406
+  moyenne urbain / rural                                    0.0365 / 0.107
+
+south-central-tx, 6010 tracts
+  population nulle                                          21
+    dont au moins une composante definie                    14
+    score moyen de ces tracts                               0.2209
+  surface terrestre nulle (ALAND = 0)                       9
+    dont aucune composante definie                          7
+  ni route ni batiment Overture                             9
+    score moyen de ces tracts                               1.0
+  composantes definies, 3 / 2 / 1 / 0                       4294 / 1696 / 13 / 7
+  diviseur fixe 3, ecart moyen absolu au composite          0.002
+  diviseur fixe 3, correlation des rangs                    0.999
+  moyenne par tract / ponderee par la population            0.0486 / 0.0444
+  moyenne urbain / rural                                    0.0425 / 0.0767
